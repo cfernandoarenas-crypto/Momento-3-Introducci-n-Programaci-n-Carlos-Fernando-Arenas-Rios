@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Institucional</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styleFinal.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1 class="logo">Evaluación Institucional</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#aspectos">Aspectos</a></li>
+                <li><a href="#formulario">Evaluar</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="portada flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10 px-6 py-12" id="inicio">
+            <div class="portada-texto">
+                <h2>Tu opinión mejora nuestra institución</h2>
+                <p>Participa en el proceso de evaluación institucional del periodo académico.</p>
+            </div>
+            <img src="imagen.jpg" alt="Estudiantes en la institución" class="portada-imagen w-full max-w-sm h-56 object-cover">
+        </section>
+
+        <section id="aspectos">
+            <h2 class="titulo-seccion">Aspectos de evaluación</h2>
+            <div class="galeria flex flex-wrap justify-center items-stretch gap-5 px-8 pb-10">
+                <article class="tarjeta">
+                    <span class="etiqueta">Abierto</span>
+                    <h3>Docencia</h3>
+                    <p>Calidad de la enseñanza y desempeño docente.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Infraestructura</h3>
+                    <p>Aulas, laboratorios y espacios comunes.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <span class="etiqueta">Abierto</span>
+                    <h3>Bienestar</h3>
+                    <p>Servicios de apoyo y bienestar estudiantil.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Tecnología</h3>
+                    <p>Equipos, plataformas y conectividad.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Atención administrativa</h3>
+                    <p>Trato y rapidez en los trámites.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <span class="etiqueta">Cerrado</span>
+                    <h3>Planes de estudio</h3>
+                    <p>Contenidos y actualización de los programas.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="formulario">
+            <h2 class="titulo-seccion">Formulario de evaluación</h2>
+            <form class="formulario" action="exito.html">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="rol">Tu rol en la institución</label>
+                <select id="rol" name="rol">
+                    <option>Estudiante</option>
+                    <option>Docente</option>
+                    <option>Administrativo</option>
+                </select>
+
+                <label for="aspecto">Aspecto a evaluar</label>
+                <select id="aspecto" name="aspecto">
+                    <option>Docencia</option>
+                    <option>Infraestructura</option>
+                    <option>Bienestar</option>
+                    <option>Tecnología</option>
+                </select>
+
+                <label for="comentario">Comentarios</label>
+                <textarea id="comentario" name="comentario" rows="4"></textarea>
+
+                <button type="submit">Enviar evaluación</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie flex flex-col sm:flex-row justify-around items-center gap-2 p-6" id="contacto">
+        <p>Contacto: evaluacion@institucion.edu</p>
+        <p>Proyecto de Metodologías - Momento 3</p>
+    </footer>
+
+    <a href="#inicio" class="subir">Subir</a>
+
+</body>
+</html>
